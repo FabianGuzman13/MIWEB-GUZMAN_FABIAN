@@ -9,7 +9,8 @@
     <h1>MIWEB GUZMAN_FABIAN</h1>
     
     <h2>Información del Autor</h2>
-    <p><strong>Nombre:</strong> Fabian Enrique Guzman Choque</p>
+    <p><strong>Nombre Completo:</strong> Fabian Enrique Guzman Choque</p>
+    <p><strong>Curso:</strong> Desarrollo Web</p>
     
     <h2>Opciones</h2>
     <ul>
