@@ -13,7 +13,7 @@
         <input type="number" name="numero" min="0" required>
         <br><br>
         
-        <button type="submit">Calcular Factorial</button>
+        <button type="submit">Calcular</button>
     </form>
     
     <?php
