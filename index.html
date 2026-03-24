@@ -5,103 +5,16 @@
 </head>
 <body>
     <h1>MIWEB GUZMAN_FABIAN</h1>
-    
+
     <h2>Información del Autor</h2>
     <p><strong>Nombre Completo:</strong> Fabian Enrique Guzman Choque</p>
     <p><strong>Curso:</strong> Desarrollo Web</p>
-    
-    <hr>
-    
-    <h2>Calculadoras</h2>
-    
-    <form onsubmit="calcularSuma(event)">
-        <fieldset>
-            <legend>Suma de 2 Números</legend>
-            <label>Primer Número:</label>
-            <input type="number" id="num1" step="any" required>
-            <br><br>
-            <label>Segundo Número:</label>
-            <input type="number" id="num2" step="any" required>
-            <br><br>
-            <button type="submit">Calcular Suma</button>
-        </fieldset>
-    </form>
-    
-    <br>
-    
-    <form onsubmit="calcularFactorial(event)">
-        <fieldset>
-            <legend>Factorial</legend>
-            <label>Número:</label>
-            <input type="number" id="numero" min="0" required>
-            <br><br>
-            <button type="submit">Calcular Factorial</button>
-        </fieldset>
-    </form>
-    
-    <br>
-    
-    <form onsubmit="generarFibonacci(event)">
-        <fieldset>
-            <legend>Serie Fibonacci</legend>
-            <label>Cantidad de Términos:</label>
-            <input type="number" id="cantidad" min="1" max="50" required>
-            <br><br>
-            <button type="submit">Generar Fibonacci</button>
-        </fieldset>
-    </form>
-    
-    <div id="resultado"></div>
-    
-    <script>
-        function calcularSuma(event) {
-            event.preventDefault();
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-            var suma = num1 + num2;
-            
-            document.getElementById("resultado").innerHTML = "<hr><h2>Resultado:</h2><p><strong>" + num1 + " + " + num2 + " = " + suma + "</strong></p>";
-        }
-        
-        function calcularFactorial(event) {
-            event.preventDefault();
-            var n = parseInt(document.getElementById("numero").value);
-            
-            if (n < 0) {
-                document.getElementById("resultado").innerHTML = "<hr><h2>Resultado:</h2><p><strong>Error: El número no puede ser negativo</strong></p>";
-                return;
-            }
-            
-            var resultado = 1;
-            for (var i = 2; i <= n; i++) {
-                resultado *= i;
-            }
-            
-            document.getElementById("resultado").innerHTML = "<hr><h2>Resultado:</h2><p><strong>" + n + "! = " + resultado + "</strong></p>";
-        }
-        
-        function generarFibonacci(event) {
-            event.preventDefault();
-            var cantidad = parseInt(document.getElementById("cantidad").value);
-            
-            if (cantidad <= 0) {
-                document.getElementById("resultado").innerHTML = "<hr><h2>Resultado:</h2><p><strong>Error: Cantidad debe ser mayor a 0</strong></p>";
-                return;
-            }
-            
-            var fib = [];
-            var a = 0;
-            var b = 1;
-            
-            for (var i = 0; i < cantidad; i++) {
-                fib.push(a);
-                var temp = a + b;
-                a = b;
-                b = temp;
-            }
-            
-            document.getElementById("resultado").innerHTML = "<hr><h2>Resultado:</h2><p><strong>" + fib.join(", ") + "</strong></p>";
-        }
-    </script>
+
+    <h2>Opciones</h2>
+    <ul>
+        <li><a href="suma.html">Calcular Suma de 2 Números</a></li>
+        <li><a href="factorial.html">Calcular Factorial de un Número</a></li>
+        <li><a href="fibonacci.html">Serie Fibonacci</a></li>
+    </ul>
 </body>
 </html>

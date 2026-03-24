@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calcular Suma</title>
+</head>
+<body>
+    <h1>Calculadora de Suma</h1>
+
+    <form onsubmit="calcularSuma(event)">
+        <label>Primer Número:</label>
+        <input type="number" id="num1" step="any" required>
+        <br><br>
+
+        <label>Segundo Número:</label>
+        <input type="number" id="num2" step="any" required>
+        <br><br>
+
+        <button type="submit">Calcular Suma</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <br>
+    <a href="index.html">Volver al inicio</a>
+
+    <script>
+        function calcularSuma(event) {
+            event.preventDefault();
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var suma = num1 + num2;
+
+            document.getElementById("resultado").innerHTML = "<h2>Resultado: " + num1 + " + " + num2 + " = " + suma + "</h2>";
+        }
+    </script>
+</body>
+</html>
