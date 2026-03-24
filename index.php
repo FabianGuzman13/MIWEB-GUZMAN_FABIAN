@@ -14,8 +14,6 @@
     
     <h2>Opciones</h2>
     <ul>
-        <li><a href="suma.php">Calcular Suma de 2 Números</a></li>
-        <li><a href="factorial.php">Calcular Factorial de un Número</a></li>
         <li><a href="fibonacci.php">Serie Fibonacci</a></li>
     </ul>
 </body>
