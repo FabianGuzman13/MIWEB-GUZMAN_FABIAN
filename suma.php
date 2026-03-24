@@ -17,7 +17,7 @@
         <input type="number" name="num2" step="any" required>
         <br><br>
         
-        <button type="submit">Calcular Suma</button>
+        <button type="submit">Calcular</button>
     </form>
     
     <?php
